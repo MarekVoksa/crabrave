@@ -34,17 +34,20 @@ function load() {
 
   var $video = $( '#video' ),
     $text = $( '.text-container' ),
-    $newMeme = $( '#new-meme' );
+    $newMeme = $( '#new-meme' ),
+    $makeNew = $( '.make-new' );
+
+  document.getElementById("video").volume = 0.2;
 
   if ( text ) {
 
     $newMeme.css( "display", "none" );
 
+    $makeNew.css( "display", "block" );
+
     $text.html( text.toUpperCase() );
 
     $video.trigger( "play" );
-
-    $video.get( 0 ).volume = 1;
 
     $text.on( "click", function () {
 
@@ -56,13 +59,9 @@ function load() {
 
     $newMeme.css( "display", "flex" );
 
-    $video.prop( "volume", 0.1 );
+    $makeNew.css( "display", "none" );
 
-    $text.on( "click", function () {
-
-      $video.get( 0 ).paused ? $video.trigger( "play" ) : $video.trigger( "pause" );
-
-    });
+    document.getElementById("video").volume = 0.01;
 
   }
 
