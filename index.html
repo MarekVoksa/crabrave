@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Crab Rave</title>
+  <meta name="description" content="Crab rave meme generator">
+  <meta name="author" content="MarekVoksa">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+  <main>
+    <video width="500" height="500" id="video" loop autoplay>
+      <source src="static/crabrave.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="text-container"></div>
+    <div id="new-meme">
+      <input type="text" id="text" placeholder="Enter your text here...">
+      <button type="button" onclick="createMeme()">Make meme</button>
+    </div>
+  </main>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script defer src="static/main.js"></script>
+</body>
+</html>
