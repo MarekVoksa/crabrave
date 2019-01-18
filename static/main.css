@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Quicksand', sans-serif; }
 
 html, body {
   width: 100%;
@@ -23,7 +23,6 @@ video {
   width: 100%;
   height: 100%;
   color: white;
-  font-family: 'Quicksand', sans-serif;
   line-height: 100vh;
   text-align: center;
   font-size: 100px;
@@ -41,7 +40,6 @@ video {
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  font-family: 'Quicksand', sans-serif;
 }
 
 #new-meme input {
@@ -69,4 +67,16 @@ video {
   text-decoration: none;
   text-align: center;
   line-height: 30px;
+}
+
+.autoplay {
+  width: 100%;
+  display: block;
+  position: fixed;
+  z-index: 3;
+  bottom: 10px;
+  color: #ed6a1e;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
 }
